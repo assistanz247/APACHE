@@ -7,7 +7,7 @@ FROM microsoft/windowsservercore
 ADD ./setup c:/apache
 
 #INSTALLING APACHE
-RUN ["msiexec.exe", "/i", "C:\\apache\\apache_2.2.4-win32-x86-no_ssl.msi", "/qn"]
+RUN ["msiexec.exe", "/i", "C:\\apache\\httpd-2.2.25-win32-x86-no_ssl.msi", "/qn"]
 
 #APACHE CONFIGURATION
 
